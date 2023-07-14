@@ -2,13 +2,11 @@
 Easily add cursor pagination to your drizzle-orm queries.
 
 ## Installation
----
 ```bash
 npm install drizzle-pagination
 ```
 
 ## Usage
----
 
 ### With a single, unique cursor
 Use a single cursor when the column that you want to sort your results by is guaranteed to be unique (for example, an `id` column).
