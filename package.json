@@ -16,7 +16,8 @@
     "clean": "rimraf dist/",
     "prebuild": "pnpm clean",
     "build": "tsup src/index.ts --format cjs,esm --dts --clean",
-    "pretest": "pnpm build"
+    "pretest": "pnpm build",
+    "publish": "pnpm build && pnpm publish"
   },
   "keywords": ["drizzle", "orm", "pagination", "drizzle-orm", "cursor pagination", "drizzle pagination", "paginate drizzle"],
   "author": "Michael Tromba",
