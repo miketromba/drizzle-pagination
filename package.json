@@ -1,6 +1,6 @@
 {
   "name": "drizzle-pagination",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
@@ -17,7 +17,7 @@
     "prebuild": "pnpm clean",
     "build": "tsup src/index.ts --format cjs,esm --dts --clean",
     "pretest": "pnpm build",
-    "publish": "pnpm build && pnpm publish"
+    "prepublish": "pnpm build"
   },
   "keywords": ["drizzle", "orm", "pagination", "drizzle-orm", "cursor pagination", "drizzle pagination", "paginate drizzle"],
   "author": "Michael Tromba",
