@@ -28,7 +28,7 @@ const page = await db.query.post.findMany(
     })
 )
 ```
-> **Warning**
+> **Warning** - 
 > When using a single cursor, make sure it is a unique column - otherwise you may get unexpected results.
 
 ### With two cursors (one non-unique, sequential cursor, and a unique cursor as a fallback)
@@ -47,7 +47,7 @@ const page = await db.query.post.findMany(
     })
 )
 ```
-> **Warning**
+> **Warning** - 
 > When using two cursors, your second cursor should always be a unique column to ensure a stable sort order.
 
 ### Using spread operator syntax
