@@ -16,7 +16,7 @@ import { withCursorPagination } from 'drizzle-pagination'
 
 const page = await db.query.post.findMany(
     withCursorPagination({
-        where: eq(schema.post.status, 'published'),
+        where: eq(schema.post.status, 'published'), // 'where' is optional
         limit: 32,
         cursors: [
             [
@@ -31,7 +31,7 @@ const page = await db.query.post.findMany(
 > **Warning** - 
 > When using a single cursor, make sure it is a unique column - otherwise you may get unexpected results.
 
-### With two cursors (one non-unique, sequential cursor, and a unique cursor as a fallback)
+### With two cursors (one non-unique sequential cursor, with a unique cursor as a fallback)
 Use two cursors when you want to order your results by a column that is not unique. For example:
 ```js
 const page = await db.query.post.findMany(
@@ -50,7 +50,7 @@ const page = await db.query.post.findMany(
 > **Warning** - 
 > When using two cursors, your second cursor should always be a unique column to ensure a stable sort order.
 
-### Using spread operator syntax
+### Using spread syntax
 Use spread syntax to combine the `withCursorPagination` helper with other query inputs, like the `with` option, for example. 
 ```js
 const page = await db.query.post.findMany({
@@ -65,6 +65,8 @@ const page = await db.query.post.findMany({
     with: { author: true }
 })
 ```
+> **Warning** - 
+> When using spread syntax, make sure to let `withCursorPagination` control the `orderBy` and `where` options, otherwise you will break the pagination.
 
 ### What about nullable columns?
 Paginating with a nullable column may have varied results depending on the database/driver you're using. If possible, try to use non-nullable columns for your pagination. For example:
