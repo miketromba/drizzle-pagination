@@ -74,7 +74,7 @@ Set the default value to an empty string. All columns with the empty string will
 
 #### Instead of a nullable `datetime` column:
 
-Set the default value to "1970-01-01 00:00:00" (the oldest possible value in most databases). Then, in your application, instead of doing a null check, simply check for the default value.
+Set the default value to "1970-01-01 00:00:00" (the oldest possible value in most databases). Then, in your application, instead of doing a null check, check for the default value.
 
 ```js
 const date = someDate === "1970-01-01 00:00:00" ? null : someDate
@@ -83,7 +83,7 @@ const date = someDate === "1970-01-01 00:00:00" ? null : someDate
 This will ensure that the order of your results will always be what you expect.
 
 ### Can I use more than two cursors?
-**Not yet.** Right now this library only supports using one or two cursors. This should cover the majority of use cases. That being said, a PR adding support for a dynamic amount of cursors is welcome! E.g. A common use-case for 3+ cursors might be: `[firstName, lastName, id]`.
+**Not yet.** Right now this library only supports using one or two cursors. This should cover the majority of use cases. That being said, a PR adding support for a dynamic amount of cursors is welcome. E.g. A common use-case for 3+ cursors might be: `[firstName, lastName, id]`.
 
 ## Contributing
 PRs are welcome!
