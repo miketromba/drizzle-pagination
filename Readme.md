@@ -74,7 +74,7 @@ Set the default value to an empty string. All columns with the empty string will
 
 #### Instead of a nullable `datetime` column:
 
-Set the default value to "1970-01-01 00:00:00" (the oldest possible value in most databases). Then, in your application, instead of doing a null check, check for the default value.
+Set the default value to "1970-01-01 00:00:00". Then, in your application, instead of doing a null check, check for the default value.
 
 ```js
 const date = someDate === "1970-01-01 00:00:00" ? null : someDate
