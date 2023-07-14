@@ -87,3 +87,6 @@ This will ensure that the order of your results will always be what you expect.
 
 ## Contributing
 PRs are welcome!
+
+## License
+This package is distributed under the [MIT license](https://opensource.org/license/mit/).
