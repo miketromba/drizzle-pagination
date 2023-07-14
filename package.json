@@ -1,0 +1,32 @@
+{
+  "name": "drizzle-pagination",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "require": "./dist/index.js",
+      "import": "./dist/index.mjs",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "scripts": {
+    "clean": "rimraf dist/",
+    "prebuild": "pnpm clean",
+    "build": "tsup src/index.ts --format cjs,esm --dts --clean",
+    "pretest": "pnpm build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "drizzle-orm": "^0.27.2"
+  },
+  "devDependencies": {
+    "rimraf": "^5.0.1",
+    "tsup": "^7.1.0",
+    "typescript": "^5.1.3"
+  }
+}
