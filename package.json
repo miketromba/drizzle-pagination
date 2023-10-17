@@ -1,6 +1,6 @@
 {
   "name": "drizzle-pagination",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "Easily add cursor pagination to your Drizzle ORM queries.",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
@@ -28,7 +28,7 @@
   "author": "Michael Tromba",
   "license": "MIT",
   "peerDependencies": {
-    "drizzle-orm": "^0.27.2"
+    "drizzle-orm": ">=0.27.2 <0.29.0"
   },
   "devDependencies": {
     "rimraf": "^5.0.1",

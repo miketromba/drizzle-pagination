@@ -17,7 +17,7 @@ export function withCursorPagination<
 	cursors,
 	limit,
 	where: inputWhere
-}: { limit: number; where?: Parameters<typeof and>[0] } & (
+}: { limit: number; where?: SQL} & (
 	| {
 			cursors: [
 				[PrimaryColumn, Order] | [PrimaryColumn, Order, PrimaryCursor]
@@ -33,9 +33,9 @@ export function withCursorPagination<
 			]
 	  }
 )): {
-	orderBy: SQL<unknown>[]
+	orderBy: SQL[]
 	limit: number
-	where?: SQL<unknown>
+	where?: SQL
 } {
 	// Primary cursor
 	const primaryColumn = cursors[0][0]
@@ -61,7 +61,7 @@ export function withCursorPagination<
 	const singleColumnPaginationWhere =
 		typeof primaryCursor !== 'undefined'
 			? primaryOperator(primaryColumn, primaryCursor)
-			: null
+			: undefined
 
 	// Double cursor pagination
 	const doubleColumnPaginationWhere =
@@ -76,7 +76,7 @@ export function withCursorPagination<
 						secondaryOperator(secondaryColumn, secondaryCursor)
 					)
 			  )
-			: null
+			: undefined
 
 	// Generate the final where clause
 	const paginationWhere = secondaryColumn
