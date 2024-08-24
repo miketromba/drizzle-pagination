@@ -1,3 +1,9 @@
+### 👉 _Job hunting?_ I'm building an AI that helps you get hired quicker: [ApplyFox.ai](https://applyfox.ai)
+
+<img width="829" alt="applyfox-829x90" src="https://github.com/user-attachments/assets/6b45becd-5e8a-42db-8cf5-252af04ed8d9">
+
+---
+
 # drizzle-pagination
 Easily add cursor pagination to your drizzle-orm queries.
 
