@@ -1,6 +1,6 @@
 {
   "name": "drizzle-pagination",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "description": "Easily add cursor pagination to your Drizzle ORM queries.",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
