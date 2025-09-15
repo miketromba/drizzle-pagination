@@ -1,6 +1,6 @@
-### 👉 _Job hunting?_ I'm building an AI that helps you get hired: [ApplyFox.ai](https://applyfox.ai)
+### 👉 _Introducing:_ [UXCanvas.ai](https://uxcanvas.ai?utm_source=drizzle-pagination) — The AI-Powered UI/UX Design Agent
 
-[<img width="829" alt="applyfox-829x90" src="https://github.com/user-attachments/assets/6b45becd-5e8a-42db-8cf5-252af04ed8d9">](https://applyfox.ai)
+[![image](https://github.com/user-attachments/assets/ce7485c2-b143-46d3-b5ac-9c679d0af48b)](https://uxcanvas.ai?utm_source=drizzle-pagination)
 
 ---
 
