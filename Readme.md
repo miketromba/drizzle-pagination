@@ -1,6 +1,6 @@
 ### 👉 _Introducing:_ [UXCanvas.ai](https://uxcanvas.ai?utm_source=drizzle-pagination) — The AI-Powered UI/UX Design Agent
 
-[![image](https://github.com/user-attachments/assets/ce7485c2-b143-46d3-b5ac-9c679d0af48b)](https://uxcanvas.ai?utm_source=drizzle-pagination)
+[![image](https://github.com/user-attachments/assets/1da0ae84-7bef-4cbd-8b60-3c67166d028e)](https://uxcanvas.ai?utm_source=drizzle-pagination)
 
 ---
 
