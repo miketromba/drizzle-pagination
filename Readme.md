@@ -4,7 +4,10 @@
 
 ---
 
-# drizzle-pagination
+<p align="center">
+  <img src="assets/banner.png" alt="drizzle-pagination" />
+</p>
+
 Easily add cursor pagination to your drizzle-orm queries.
 
 ## Installation
